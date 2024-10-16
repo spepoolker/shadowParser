@@ -3,16 +3,25 @@ package org.example
 import com.google.gson.Gson
 import com.google.gson.JsonObject
 import com.google.gson.JsonParser
+import org.example.Config.shadowDir
 import java.io.File
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 object LocalShadowUtils {
 
-  const val LOG_MISSING_PROPERTIES = false
+  private const val LOG_MISSING_PROPERTIES = false
 
-  const val TS = "20240909"
-  const val BASE_SHADOW_DIR = "/Users/sylvain/ShellScriptsProjects/old/"
-  const val ROOT_SHADOW_DIR = "$BASE_SHADOW_DIR/shadows"
-  const val SHADOW_DIR = "${ROOT_SHADOW_DIR}_$TS"
+  private val TS = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd"))
+  private val ROOT_SHADOW_DIR = "$shadowDir/shadows"
+  // TODO switch to shadows/$timestamp
+  val SHADOW_DIR = "${ROOT_SHADOW_DIR}_$TS"
+
+  fun getShadowDirPath(ts: String = TS): String = "${ROOT_SHADOW_DIR}_$ts"
+  fun getShadowDirFile(ts: String = TS): File = File(getShadowDirPath(ts))
+
+  fun getShadowPath(deviceId: String, ts: String = TS): String = getShadowDirPath(ts) + "/$deviceId.json"
+  fun getShadowFile(deviceId: String, ts: String = TS): File = File(getShadowPath(deviceId, ts))
 
   fun listShadowDirectories(): List<String> {
     return File(ROOT_SHADOW_DIR).parentFile
