@@ -1,5 +1,8 @@
 package org.example
 
+import org.example.Config.awsRegion
+import org.example.Config.getAwsCommand
+import org.example.Config.outputDirPath
 import java.io.BufferedReader
 import java.io.File
 import java.io.InputStreamReader
@@ -13,17 +16,9 @@ import java.util.*
 @OptIn(ExperimentalStdlibApi::class)
 object IotCoreUtils {
 
+  private val SHADOW_LINK = "https://$awsRegion.console.aws.amazon.com/iot/home?region=$awsRegion#/thing/%s/namedShadow/Classic Shadow"
 
-
-  const val USER_DIR = "\\\\wsl.localhost\\Debian\\home\\stual"
-  const val SCRIPTS_DIR = "$USER_DIR/ShellScriptsProjects/old"
-  const val AWS_CLI = "aws"
-  const val SHADOW_LINK = "https://eu-west-1.console.aws.amazon.com/iot/home?region=eu-west-1#/thing/%s/namedShadow/Classic Shadow"
-
-  val AWS_IOT = listOf(AWS_CLI, "iot")
-  val AWS_IOT_DATA = listOf(AWS_CLI, "iot-data")
-
-  fun shadowLink(deviceId: String): String = String.format(SHADOW_LINK, deviceId).replace(" ", "%20")
+  fun shadowLink(deviceId: String) = String.format(SHADOW_LINK, deviceId).replace(" ", "%20")
 
   fun mapRatio(map: Map<*, Int>, total: Int = map.size): Map<*, String> {
     return map.mapValues { "%.1f".format(it.value.toDouble() / total * 100) }
@@ -36,9 +31,7 @@ object IotCoreUtils {
   }
 
   fun execCommand(command: List<String>, outputFile: File? = null) {
-    val processBuilder = ProcessBuilder(command)
-    processBuilder.redirectErrorStream(true)
-
+    val processBuilder = ProcessBuilder(command).apply { redirectErrorStream(true) }
     val process = processBuilder.start()
     val reader = BufferedReader(InputStreamReader(process.inputStream))
     var line: String?
@@ -52,8 +45,8 @@ object IotCoreUtils {
   }
 
   fun listThings(suffix: String? = null): String {
-    val command = listOf("wsl",AWS_CLI, "iot", "list-things")
-    val outputFileName = "things${suffix?.let{ "_$it" }}.json"
+    val command = getAwsCommand("iot", "list-things")
+    val outputFileName = "$outputDirPath/things${suffix?.let{ "_$it" }}.json"
     // TODO add exponential backoff in case of throttling
     execCommand(command, File(outputFileName))
     return outputFileName
@@ -69,7 +62,7 @@ object IotCoreUtils {
     prettyPrint: Boolean? = false
   ) {
     val outputFile = File(outputDirectory, "$deviceId.json")
-    val command = AWS_IOT_DATA + listOf("get-thing-shadow", "--thing-name", deviceId, outputFile.absolutePath)
+    val command = getAwsCommand("iot-data", "get-thing-shadow", "--thing-name", deviceId, outputFile.absolutePath)
     execCommand(command)
 
     // once this is done, overwrite the file with a pretty-printed version
@@ -85,16 +78,13 @@ object IotCoreUtils {
     val valueString = if (value is String) "\"$value\"" else value.toString()
     val payload = """{"state":{"desired":{"$deviceId/$property":$valueString}}}"""
     val base64Payload = Base64.getEncoder().encodeToString(payload.toByteArray())
-    val command = AWS_IOT_DATA +
-        listOf("update-thing-shadow", "--thing-name", deviceId, "--payload", base64Payload, "output.json")
+    val command = getAwsCommand("iot-data", "update-thing-shadow", "--thing-name", deviceId, "--payload", base64Payload, "output.json")
     execCommand(command)
   }
 
 }
 
 fun main() {
-  val file = File("\\\\wsl.localhost\\Debian\\home\\stual\\aws")
-  println(file.exists())
   val today = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))
   val thingsFileName = IotCoreUtils.listThings(today)
 

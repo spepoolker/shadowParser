@@ -5,6 +5,9 @@ import com.google.gson.JsonDeserializationContext
 import com.google.gson.JsonDeserializer
 import com.google.gson.JsonElement
 import com.google.gson.annotations.SerializedName
+import org.example.Config.awsRegion
+import org.example.Config.getAwsCommand
+import org.example.Config.outputDirPath
 import java.io.File
 import java.lang.reflect.Type
 
@@ -62,23 +65,22 @@ object DynamoDbUtils {
     .registerTypeAdapter(IOTDevice::class.java, IOTDeviceDeserializer())
     .create()
 
-  fun loadIOTDevicesList(): IOTDevicesList {
-    val file = File("IOT_devicesList.json")
+  fun loadIOTDevicesList(fileName:String = "IOT_devicesList.json"): IOTDevicesList {
+    val file = File("$outputDirPath/$fileName")
     return gson.fromJson(file.readText(), IOTDevicesList::class.java)
   }
 
   // method to dump a table to json file
   fun dumpTable(tableName: String, fileName: String = tableName) {
-    val command = listOf("wsl",IotCoreUtils.AWS_CLI, "dynamodb", "scan", "--table-name", tableName,"--region","eu-west-3")
-    val outputFileName = "$fileName.json"
-    // TODO output to the right directory
-    IotCoreUtils.execCommand(command, File(outputFileName))
+    val command = getAwsCommand("dynamodb", "scan", "--table-name", tableName, "--region", awsRegion)
+    val outputFile = File("$outputDirPath/$fileName.json").apply { if (exists()) delete() else parentFile.mkdirs() }
+    IotCoreUtils.execCommand(command, outputFile)
   }
 
 }
 
 fun main() {
-  DynamoDbUtils.dumpTable("VigipoolStack-VigipoolIoTsListDB70C5EE1D-1796DF05LZLBS")
+  DynamoDbUtils.dumpTable("IOT_devicesList")
 //  val iotDeviceList = DynamoDbUtils.loadIOTDevicesList()
 //  val device = iotDeviceList.getDevice("C049EFEC97C8")
 //  println(device)
