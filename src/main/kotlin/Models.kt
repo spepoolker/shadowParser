@@ -349,8 +349,7 @@ class ShadowWrapper {
   }
 
   fun checkStateBit(deviceId: String, bit: Int): Boolean {
-    val deviceState = (shadow?.state?.reported?.get("$deviceId/state") as? Double) ?: 0
-    val stateString = deviceState.toInt().toString(2).padStart(32, '0')
-    return stateString[32 - bit - 1] == '1'
+    val deviceState = (shadow?.state?.reported?.get("$deviceId/state") as? Int) ?: 0
+    return deviceState.toInt() and (1 shl bit) != 0
   }
 }
