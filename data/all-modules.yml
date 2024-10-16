@@ -1,0 +1,759 @@
+- name: Auxiliary2M
+  properties:
+    aux2_mode:
+      type: uint8
+      sub: pos:medium
+    aux2_state:
+      type: uint8
+      sub: pos:medium
+    aux2_sched:
+      type: string44
+
+- name: Auxiliary
+  properties:
+    aux_type:
+      type: uint8
+      sub: pos:medium
+    aux_conf:
+      type: uint16
+      sub: pos:medium
+    aux_state:
+      type: uint8
+      sub: pos:medium
+    aux_min_temp:
+      type: uint16
+      sub: pos:medium
+      transform: x10
+    consigne_temp:
+      type: uint16
+      sub: pos:medium
+      transform: x10
+    source_temp:
+      type: string44
+    consigne_orp:
+      type: uint16
+      sub: pos:medium
+    source_orp:
+      type: string44
+    aux_sched:
+      type: string44
+
+- name: AuxiliaryM
+  properties:
+    aux1_type:
+      type: uint8
+      io: r
+      sub: pos:medium
+    aux1_mode:
+      type: uint8
+      sub: pos:medium
+    aux1_state:
+      type: uint8
+      sub: pos:medium
+    consigne_temp:
+      type: uint16
+      sub: pos:medium
+      transform: x10
+    source_temp:
+      type: string44
+    value_orp:
+      type: uint16
+      io: r
+      sub: pos:medium
+      transform: x1
+    consigne_orp:
+      type: uint16
+      sub: pos:medium
+      transform: x1
+    source_orp:
+      type: string44
+    aux1_sched:
+      type: string44
+    aux_conf_m:
+      type: uint16
+      io: r
+      sub: pos:medium
+
+- name: ChlorineMeasurement
+  parent: Measurement
+  properties:
+    value_chlor:
+      type: uint16
+      io: r
+      sub: pos:medium
+      transform: x100
+    chlor_adjust:
+      type: int8
+      io: rw
+      sub: pos:medium
+      transform: x100
+    date_mes_chlor:
+      type: uint32
+      transform: date
+
+- name: ChlorineRegulation
+  parent: Regulation
+  properties:
+    consigne_chlor:
+      type: uint16
+      io: rw
+      sub: pos:medium
+      transform: x100
+    source_chlor:
+      type: string44
+      io: rw
+      sub: pos:medium
+    chlor_hyst:
+      type: uint8
+      io: rw
+    cs:
+      type: uint8
+      io: r
+      sub: pos:medium
+
+- name: Cover
+  properties:
+    couv_on:
+      type: uint8
+      io: r
+      sub: pos:medium
+
+- name: Electrolysis
+  properties:
+    prod_on:
+      type: uint8
+      io: r
+      sub: pos:medium
+    prod_chlore:
+      type: uint8
+      io: r
+      sub: pos:medium
+    value_cond:
+      type: uint16
+      io: r
+    voltage_ely:
+      type: uint16
+      io: r
+      sub: pos:medium
+    current_ely:
+      type: uint16
+      io: r
+      sub: pos:medium
+    ely_duration_compensated:
+      type: uint16
+      io: r
+      sub: pos:medium
+    ely_duration_in_minut:
+      type: uint16
+      io: r
+      sub: pos:medium
+    null:
+      type: int8
+    mode_ely:
+      type: uint8
+      sub: pos:medium
+    mode_choc:
+      type: uint8
+      sub: pos:medium
+    power_ely:
+      type: uint8
+      sub: pos:medium
+    water_hardness:
+      type: uint8
+      sub: pos:medium
+    ely_duration_theo:
+      type: uint8
+      sub: pos:medium
+    temp_min_off_ely:
+      type: uint16
+      sub: pos:medium
+      transform: x10
+    choc_duration:
+      type: uint8
+      sub: pos:medium
+    consigne_orp:
+      type: uint16
+      sub: pos:medium
+      transform: x1
+    source_orp:
+      type: string44
+    cell_type:
+      type: uint8
+      io: r
+      sub: pos:medium
+
+- name: EnergyMeasurement
+  parent: Measurement
+  properties:
+    watt_ind:
+      type: uint32
+      io: r
+      sub: pos:medium
+    refresh:
+      type: uint16
+      sub: pos:medium
+    watt:
+      type: uint16
+      io: r
+      sub: pos:medium
+    amp:
+      type: uint16
+      io: r
+      sub: pos:medium
+      transform: x10
+    volt:
+      type: uint8
+      io: r
+      sub: pos:medium
+    freq:
+      type: uint8
+      io: r
+      sub: pos:medium
+    pf:
+      type: uint8
+      io: r
+      sub: pos:medium
+    meter_sn:
+      type: uint32
+      io: r
+      sub: pos:medium
+    meter_sw:
+      type: string32
+      io: r
+      sub: pos:medium
+
+- name: Filtration
+  properties:
+    filt_light_force:
+      type: uint8
+    filt_state:
+      type: uint8
+      sub: pos:medium
+    filt_serv_inter:
+      type: uint16
+    filt_sched:
+      type: string44
+
+- name: FiltrationM
+  properties:
+    filt_mode:
+      type: uint8
+      sub: pos:medium
+    filt_state_m:
+      type: uint8
+      sub: pos:medium
+    filt_sched_m:
+      type: string44
+
+- name: Flow
+  properties:
+    flow_on:
+      type: uint8
+      io: r
+      sub: pos:medium
+
+- name: FlowNo
+  parent:
+  properties:
+    flow_no:
+      type: uint8
+      io: r
+      sub: pos:medium
+
+- name: FlowMeasurement
+  parent: Measurement
+  properties:
+    debit:
+      type: uint16
+      io: r
+      sub: pos:medium
+      transform: x10
+    debit_adjust:
+      type: int8
+      sub: pos:medium
+    bypass:
+      type: uint8
+      io: rw
+      sub: pos:medium
+
+- name: FrostFree
+  properties:
+    frost_free:
+      type: uint8
+
+- name: Gateway
+  properties:
+    mode_gtw:
+      type: uint8
+      io: r
+      sub: pos:medium
+
+- name: HeatPump
+  properties:
+    pac_state:
+      type: uint8
+      sub: pos:medium
+    pac_mode:
+      type: uint8
+      sub: pos:medium
+    pac_speed:
+      type: uint8
+      sub: pos:medium
+    pac_params:
+      type: uint16
+      io: r
+      sub: pos:medium
+    pac_errors:
+      type: string44
+      sub: pos:medium
+    pac_prio:
+      type: uint8
+      sub: pos:medium
+    value_temp_out:
+      type: uint16
+      io: r
+      transform: x10
+      sub: pos:medium
+    value_temp_amb:
+      type: uint16
+      io: r
+      sub: pos:medium
+      transform: x10
+    pac_sched:
+      type: string44
+      sub: pos:medium
+
+- name: InternalTempMeasurement
+  parent: Measurement
+  properties:
+    value_temp_int:
+      type: uint16
+      io: r
+      sub: pos:short
+      transform: x10
+
+- name: Lighting
+  properties:
+    light_type:
+      type: uint8
+    light_state:
+      type: uint8
+      sub: pos:medium
+    light_code:
+      type: uint8
+      sub: pos:medium
+    light_speed:
+      type: uint8
+    light_bright:
+      type: uint8
+    light_timer:
+      type: uint32
+      sub: pos:medium
+    light_sched:
+      type: string44
+      sub: pos:medium
+
+- name: LightingM
+  properties:
+    light_type_m:
+      type: uint8
+    light_mode:
+      type: uint8
+      sub: pos:medium
+    light_state_m:
+      type: uint8
+      io: r
+      sub: pos:medium
+    light_code:
+      type: uint8
+      sub: pos:medium
+    light_speed:
+      type: uint8
+    light_bright:
+      type: uint8
+    light_sched_m:
+      type: string44
+      sub: pos:medium
+
+- name: LightingX
+  properties:
+    rgbw:
+      type: string128
+      io: w
+      sub: pos:medium
+    x3_state:
+      type: uint8
+      sub: pos:medium
+    x3_color:
+      type: string128
+      sub: pos:medium
+    x3_bright:
+      type: uint8
+      sub: pos:medium
+    x3_speed:
+      type: uint8
+      sub: pos:medium
+    light_timer:
+      type: uint32
+      sub: pos:medium
+    x3_sched:
+      type: string44
+      sub: pos:medium
+    p1_color:
+      type: string128
+      sub: pos:medium
+    p2_color:
+      type: string128
+      sub: pos:medium
+    dmx_ch:
+      type: string44
+      sub: pos:medium
+
+- name: Measurement
+
+- name: MeteorErrors
+  properties:
+    meteor_errors:
+      type: uint16
+      io: r
+      sub: pos:medium
+
+- name: OrpAware
+  parent: Measurement
+  properties:
+    value_orp:
+      type: uint16
+      io: r
+      sub: pos:medium
+      transform: x1
+
+- name: OrpMeasurement
+  parent: OrpAware
+  properties:
+    value_orp:
+      type: uint16
+      io: r
+      sub: pos:medium
+      transform: x1
+    orp_adjust:
+      type: int8
+      sub: pos:medium
+      transform: x1
+    orp_calibration_target:
+      type: uint16
+      sub: pos:medium
+      transform: x1
+    date_mes_orp:
+      type: uint32
+      transform: date
+
+- name: OrpRegulation
+  parent: Regulation
+  properties:
+    mode_orp:
+      type: uint8
+      io: r
+    priority:
+      type: uint8
+      io: r
+    consigne_orp:
+      type: uint16
+      sub: pos:medium
+      transform: x1
+    source_orp:
+      type: string44
+    source_ph:
+      type: string44
+
+- name: OrpSetpoint
+  properties:
+    consigne_orp:
+      type: uint16
+      sub: pos:medium
+      transform: x1
+
+- name: OrpSource
+  properties:
+    source_orp:
+      type: string44
+
+- name: PhMeasurement
+  parent: Measurement
+  properties:
+    value_ph:
+      type: uint16
+      io: r
+      sub: pos:short
+      transform: x100
+    ph_adjust:
+      type: int8
+      sub: pos:short
+      transform: x100
+    ph_calibration_target:
+      type: uint16
+      sub: pos:short
+      transform: x100
+    date_mes_ph:
+      type: uint32
+      transform: date
+
+- name: PhRegulation
+  parent: Regulation
+  properties:
+    mode_ph:
+      type: uint8
+      io: r
+    consigne_ph:
+      type: uint16
+      sub: pos:medium
+      transform: x100
+    source_ph:
+      type: string44
+
+- name: PressureMeasurement
+  parent: Measurement
+  properties:
+    pression:
+      type: uint8
+      io: r
+      sub: pos:medium
+      transform: x10
+    pression_adjust:
+      type: int8
+      sub: pos:medium
+      transform: x10
+
+- name: PressureMeasurementExtended
+  parent: PressureMeasurement
+  properties:
+    pression_h_alerte:
+      type: uint16
+      sub: pos:medium
+      transform: x100
+    pression_b_alerte:
+      type: uint16
+      sub: pos:medium
+      transform: x100
+    pression_h_sec:
+      type: uint16
+      sub: pos:medium
+      transform: x100
+    pression_b_sec:
+      type: uint16
+      sub: pos:medium
+      transform: x100
+    pression_option:
+      type: uint8
+      sub: pos:medium
+    error_pressure:
+      type: uint8
+      sub: pos:medium
+
+- name: Regulation
+  properties:
+    inject_on:
+      type: uint8
+      io: r
+      sub: pos:medium
+    vol_24h_inject:
+      type: uint16
+      io: r
+      sub: pos:medium
+    vol_tot_inject:
+      type: uint16
+      io: r
+    vol_bac:
+      type: uint16
+      sub: pos:medium
+    vol_max_24h:
+      type: uint16
+      sub: pos:medium
+
+- name: TempAware
+  parent: Measurement
+  properties:
+    value_temp:
+      type: uint16
+      io: r
+      sub: pos:medium
+      transform: x10
+    temp_accuracy:
+      type: uint8
+      io: r
+
+- name: TempMeasurement
+  parent: TempAware
+  properties:
+    temp_adjust:
+      type: int8
+      transform: x10
+
+- name: TempRegulation
+  properties:
+    consigne_temp:
+      type: uint16
+      sub: pos:medium
+      transform: x10
+
+- name: Timezone
+  properties:
+    tz:
+      type: string44
+    epoch:
+      type: uint32
+      src: ble
+    sunset:
+      type: uint32
+      io: r
+    sunrise:
+      type: uint32
+      io: r
+    lat:
+      type: string32
+    long:
+      type: string32
+
+- name: VariableSpeedPump
+  properties:
+    pump_id:
+      type: uint16
+      sub: pos:medium
+    pump_conf:
+      type: uint16
+      sub: pos:medium
+    filt_speed:
+      type: uint8
+      sub: pos:medium
+
+- name: Vigipool
+  properties:
+    uuid_bonding:
+      type: data44
+      src: ble
+    bonded:
+      type: uint8
+      io: r
+      src: ble
+    ble_vers:
+      type: uint8
+      io: r
+      src: ble
+    wifi_ssid:
+      type: data44
+      src: ble
+    wifi_pwd:
+      type: data44
+      io: w
+      src: ble
+    try_connect:
+      type: uint8
+      src: ble
+    wifi_connected:
+      type: uint8
+      io: r
+      src: ble
+      sub: pos:short
+    aws_connected:
+      type: uint8bool
+      io: r
+      sub: pos:short
+    connected:
+      type: uint8bool
+      io: r
+      sub: pos:short
+    model_id:
+      type: uint8
+      io: r
+    hw_vers:
+      type: uint8
+      io: r
+    sw_vers:
+      type: uint16
+      io: r
+    serial_num:
+      type: string32
+      io: r
+    state:
+      type: uint32
+      io: r
+      sub: not
+    error:
+      type: uint32
+      io: r
+      sub: pol:longer
+    name:
+      type: string44
+      sub: pos:medium
+    action:
+      type: uint8
+    device_id:
+      type: string44
+      io: r
+    update_ota:
+      type: string128
+    winter_mode:
+      type: uint8
+    mqtt_connected:
+      type: uint8
+      io: r
+      sub: pol:longer
+    server_on:
+      type: uint8
+      io: r
+    date_mes:
+      type: uint32
+      transform: date
+    protocol_version:
+      type: uint16
+      io: r
+    ap_bcast_duration:
+      type: uint8
+    jeedom_interval:
+      type: uint16
+    rssi:
+      type: int8
+      io: r
+
+- name: WaterLevelMeasurement
+  parent: Measurement
+  properties:
+    water_ind:
+      type: uint32
+      io: r
+      sub: pos:long
+    water_lvl:
+      type: uint16
+      io: r
+      sub: pos:medium
+    lvl_state:
+      type: uint8
+      io: r
+      sub: pos:medium
+    evr:
+      type: uint8
+      io: r
+      sub: pos:medium
+    evv:
+      type: uint8
+      io: r
+      sub: pos:medium
+    lvl_conf:
+      type: uint8
+      io: rw
+      sub: pos:medium
+    probe_h:
+      type: uint16
+      io: rw
+      sub: pos:medium
+    max_h:
+      type: uint16
+      io: rw
+      sub: pos:medium
+    levels:
+      type: uint32
+      io: rw
+      sub: pos:medium
+    max_fill:
+      type: uint16
+      io: rw
+      sub: pos:medium
