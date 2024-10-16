@@ -139,7 +139,7 @@ fun getVersionFile(
   ts: String = LocalShadowUtils.SHADOW_DIR.substringAfter("_"),
   deleteExisting: Boolean = true
 ):File {
-  val logFile = File("data/generated/versions_$ts.csv")
+  val logFile = File("data/output/versions_$ts.csv")
   if (!logFile.parentFile.exists())
     logFile.mkdirs()
   if (deleteExisting && logFile.exists())
