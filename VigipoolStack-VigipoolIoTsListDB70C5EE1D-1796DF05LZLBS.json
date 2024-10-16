@@ -1,0 +1,1667 @@
+{
+    "Items": [
+        {
+            "deviceName": {
+                "S": "0CB815051BF0"
+            },
+            "deviceId": {
+                "S": "0CB815051BF0"
+            },
+            "deviceType": {
+                "S": "harry"
+            },
+            "latitude": {
+                "N": "48.09439339484484"
+            },
+            "userId": {
+                "S": "9454230e-00d3-443c-84ae-509573dbe797"
+            },
+            "longitude": {
+                "N": "-1.6343683656057484"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "vigiwatt_441793428D08"
+            },
+            "deviceId": {
+                "S": "441793428D08"
+            },
+            "deviceType": {
+                "S": "vigiwatt"
+            },
+            "latitude": {
+                "N": "48.094433940734945"
+            },
+            "userId": {
+                "S": "9454230e-00d3-443c-84ae-509573dbe797"
+            },
+            "longitude": {
+                "N": "-1.6343352601351966"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "90380CFB74A8"
+            },
+            "deviceId": {
+                "S": "90380CFB74A8"
+            },
+            "deviceType": {
+                "S": "zelix"
+            },
+            "latitude": {
+                "N": "0"
+            },
+            "userId": {
+                "S": "9454230e-00d3-443c-84ae-509573dbe797"
+            },
+            "longitude": {
+                "N": "0"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "94B97E784D08"
+            },
+            "deviceId": {
+                "S": "94B97E784D08"
+            },
+            "deviceType": {
+                "S": "phileox"
+            },
+            "latitude": {
+                "N": "48.094433203980735"
+            },
+            "userId": {
+                "S": "9454230e-00d3-443c-84ae-509573dbe797"
+            },
+            "longitude": {
+                "N": "-1.6343876615623802"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "vigichlor_94E6869B52CC"
+            },
+            "deviceId": {
+                "S": "94E6869B52CC"
+            },
+            "deviceType": {
+                "S": "vigichlor"
+            },
+            "latitude": {
+                "N": "48.094493913331604"
+            },
+            "userId": {
+                "S": "9454230e-00d3-443c-84ae-509573dbe797"
+            },
+            "longitude": {
+                "N": "-1.6342977069715934"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "Meteor_CCDBA7DF70E0"
+            },
+            "deviceId": {
+                "S": "CCDBA7DF70E0"
+            },
+            "deviceType": {
+                "S": "anteam"
+            },
+            "latitude": {
+                "N": "48.0968318"
+            },
+            "userId": {
+                "S": "9454230e-00d3-443c-84ae-509573dbe797"
+            },
+            "longitude": {
+                "N": "-1.6345919"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "DCDA0C489634"
+            },
+            "deviceId": {
+                "S": "DCDA0C489634"
+            },
+            "deviceType": {
+                "S": "zeliafx"
+            },
+            "latitude": {
+                "N": "48.09444546009928"
+            },
+            "userId": {
+                "S": "9454230e-00d3-443c-84ae-509573dbe797"
+            },
+            "longitude": {
+                "N": "-1.6343323242472623"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "tild_E0E2E64C8000"
+            },
+            "deviceId": {
+                "S": "E0E2E64C8000"
+            },
+            "deviceType": {
+                "S": "tild"
+            },
+            "latitude": {
+                "N": "48.09444603438749"
+            },
+            "userId": {
+                "S": "9454230e-00d3-443c-84ae-509573dbe797"
+            },
+            "longitude": {
+                "N": "-1.6343128413156336"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "E0E2E672E0A0"
+            },
+            "deviceId": {
+                "S": "E0E2E672E0A0"
+            },
+            "deviceType": {
+                "S": "ziphox"
+            },
+            "latitude": {
+                "N": "48.09441586218826"
+            },
+            "userId": {
+                "S": "9454230e-00d3-443c-84ae-509573dbe797"
+            },
+            "longitude": {
+                "N": "-1.634387078052157"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceId": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceType": {
+                "S": "phileox"
+            },
+            "latitude": {
+                "N": "48.38677867781371"
+            },
+            "userId": {
+                "S": "296ddfb7-1c58-40a5-b285-e34f9630d37a"
+            },
+            "longitude": {
+                "N": "-4.435912957414985"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "vigipac_30C6F7C0D08C"
+            },
+            "deviceId": {
+                "S": "30C6F7C0D08C"
+            },
+            "deviceType": {
+                "S": "vigipac"
+            },
+            "latitude": {
+                "N": "48.0945552"
+            },
+            "userId": {
+                "S": "e9d3c32e-4f96-46ca-a478-7bc33d245768"
+            },
+            "longitude": {
+                "N": "-1.6344279"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "my pool light"
+            },
+            "deviceId": {
+                "S": "C049EFEC79CC"
+            },
+            "deviceType": {
+                "S": "x312"
+            },
+            "latitude": {
+                "N": "48.3864727"
+            },
+            "userId": {
+                "S": "c4089644-134c-4a98-b66d-cadeec019a4f"
+            },
+            "longitude": {
+                "N": "-4.4361685"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "Wix3_30C6F7C0F6B8"
+            },
+            "deviceId": {
+                "S": "30C6F7C0F6B8"
+            },
+            "deviceType": {
+                "S": "x312"
+            },
+            "latitude": {
+                "N": "43.13855222379231"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "5.736873762400985"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "vigiwatt_441793428D08"
+            },
+            "deviceId": {
+                "S": "441793428D08"
+            },
+            "deviceType": {
+                "S": "vigiwatt"
+            },
+            "latitude": {
+                "N": "43.13855222379231"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "5.736873762400985"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "7C9EBDE12BB4"
+            },
+            "deviceId": {
+                "S": "7C9EBDE12BB4"
+            },
+            "deviceType": {
+                "S": "phileox"
+            },
+            "latitude": {
+                "N": "48.396280031216186"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "-4.467320378033031"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "7C9EBDE12BC8"
+            },
+            "deviceId": {
+                "S": "7C9EBDE12BC8"
+            },
+            "deviceType": {
+                "S": "phileox"
+            },
+            "latitude": {
+                "N": "43.13854834853645"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "5.736804180937472"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "7C9EBDE13A78"
+            },
+            "deviceId": {
+                "S": "7C9EBDE13A78"
+            },
+            "deviceType": {
+                "S": "ziphox"
+            },
+            "latitude": {
+                "N": "43.13863076222225"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "5.73686197879657"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "niva_94B555A9FA3C"
+            },
+            "deviceId": {
+                "S": "94B555A9FA3C"
+            },
+            "deviceType": {
+                "S": "niva"
+            },
+            "latitude": {
+                "N": "43.27804421514682"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "5.384922453336339"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "niva_94B555AA023C Gawen"
+            },
+            "deviceId": {
+                "S": "94B555AA023C"
+            },
+            "deviceType": {
+                "S": "niva"
+            },
+            "latitude": {
+                "N": "43.27802185885761"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "5.384877133058878"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "niva_94B555AA03B8"
+            },
+            "deviceId": {
+                "S": "94B555AA03B8"
+            },
+            "deviceType": {
+                "S": "niva"
+            },
+            "latitude": {
+                "N": "0"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "0"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "94B97E784CE8"
+            },
+            "deviceId": {
+                "S": "94B97E784CE8"
+            },
+            "deviceType": {
+                "S": "limpidoez"
+            },
+            "latitude": {
+                "N": "43.13863076222225"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "5.73686197879657"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "94B97E784D08"
+            },
+            "deviceId": {
+                "S": "94B97E784D08"
+            },
+            "deviceType": {
+                "S": "phileox"
+            },
+            "latitude": {
+                "N": "48.3964872"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "-4.467311"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "VigiChiotte"
+            },
+            "deviceId": {
+                "S": "B0A732E2E7E0"
+            },
+            "deviceType": {
+                "S": "niva"
+            },
+            "latitude": {
+                "N": "0"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "0"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "v2 US"
+            },
+            "deviceId": {
+                "S": "C4DD57B76274"
+            },
+            "deviceType": {
+                "S": "tild"
+            },
+            "latitude": {
+                "N": "43.13863076222225"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "5.73686197879657"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "tild_C4DD57B819A4"
+            },
+            "deviceId": {
+                "S": "C4DD57B819A4"
+            },
+            "deviceType": {
+                "S": "tild"
+            },
+            "latitude": {
+                "N": "48.39633142667621"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "-4.4673219688377745"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "E0E2E6329658"
+            },
+            "deviceId": {
+                "S": "E0E2E6329658"
+            },
+            "deviceType": {
+                "S": "oxeox"
+            },
+            "latitude": {
+                "N": "43.138548343635655"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "5.736834079780405"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "tild_E0E2E64C8000"
+            },
+            "deviceId": {
+                "S": "E0E2E64C8000"
+            },
+            "deviceType": {
+                "S": "tild"
+            },
+            "latitude": {
+                "N": "48.09443764560664"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "-1.634255516275597"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "E0E2E64C8028"
+            },
+            "deviceId": {
+                "S": "E0E2E64C8028"
+            },
+            "deviceType": {
+                "S": "vigipac"
+            },
+            "latitude": {
+                "N": "43.13854834853645"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "5.736804180937472"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "tild_E0E2E64C8030"
+            },
+            "deviceId": {
+                "S": "E0E2E64C8030"
+            },
+            "deviceType": {
+                "S": "tild"
+            },
+            "latitude": {
+                "N": "0"
+            },
+            "userId": {
+                "S": "3fed268d-9c8e-43b2-9d07-37bbb54c122e"
+            },
+            "longitude": {
+                "N": "0"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceId": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceType": {
+                "S": "phileox"
+            },
+            "latitude": {
+                "N": "48.38636356405914"
+            },
+            "userId": {
+                "S": "0b031e6f-6d5b-414a-86a4-a44c02291c7a"
+            },
+            "longitude": {
+                "N": "-4.436076069250703"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "vigiwatt_441793428D08"
+            },
+            "deviceId": {
+                "S": "441793428D08"
+            },
+            "deviceType": {
+                "S": "vigiwatt"
+            },
+            "latitude": {
+                "N": "48.094439253461196"
+            },
+            "userId": {
+                "S": "2d7731fd-ed21-4d68-b8a8-bc4a13a55380"
+            },
+            "longitude": {
+                "N": "-1.6343618763511403"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "tild_94B97E784C7C"
+            },
+            "deviceId": {
+                "S": "94B97E784C7C"
+            },
+            "deviceType": {
+                "S": "tild"
+            },
+            "latitude": {
+                "N": "48.094441622377325"
+            },
+            "userId": {
+                "S": "2d7731fd-ed21-4d68-b8a8-bc4a13a55380"
+            },
+            "longitude": {
+                "N": "-1.6347853836596349"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "vigichlor_94E6869B52CC"
+            },
+            "deviceId": {
+                "S": "94E6869B52CC"
+            },
+            "deviceType": {
+                "S": "vigichlor"
+            },
+            "latitude": {
+                "N": "48.09448192881609"
+            },
+            "userId": {
+                "S": "2d7731fd-ed21-4d68-b8a8-bc4a13a55380"
+            },
+            "longitude": {
+                "N": "-1.6342201740221118"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "Wix3Z4_94E686A00A64"
+            },
+            "deviceId": {
+                "S": "94E686A00A64"
+            },
+            "deviceType": {
+                "S": "wix3z4"
+            },
+            "latitude": {
+                "N": "48.09443295605962"
+            },
+            "userId": {
+                "S": "2d7731fd-ed21-4d68-b8a8-bc4a13a55380"
+            },
+            "longitude": {
+                "N": "-1.6343347164467101"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "x312_A8032AEBDBBC"
+            },
+            "deviceId": {
+                "S": "A8032AEBDBBC"
+            },
+            "deviceType": {
+                "S": "x312"
+            },
+            "latitude": {
+                "N": "48.08740978032496"
+            },
+            "userId": {
+                "S": "2d7731fd-ed21-4d68-b8a8-bc4a13a55380"
+            },
+            "longitude": {
+                "N": "-1.6228489580522591"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "VigiChiotte"
+            },
+            "deviceId": {
+                "S": "B0A732E2E7E0"
+            },
+            "deviceType": {
+                "S": "niva"
+            },
+            "latitude": {
+                "N": "48.09444142510805"
+            },
+            "userId": {
+                "S": "2d7731fd-ed21-4d68-b8a8-bc4a13a55380"
+            },
+            "longitude": {
+                "N": "-1.634313182829909"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "tild_C4DD57B76274"
+            },
+            "deviceId": {
+                "S": "C4DD57B76274"
+            },
+            "deviceType": {
+                "S": "tild"
+            },
+            "latitude": {
+                "N": "48.09430791448587"
+            },
+            "userId": {
+                "S": "2d7731fd-ed21-4d68-b8a8-bc4a13a55380"
+            },
+            "longitude": {
+                "N": "-1.636074160805146"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "vigiwatt_CCDBA7DF70E0"
+            },
+            "deviceId": {
+                "S": "CCDBA7DF70E0"
+            },
+            "deviceType": {
+                "S": "vigiwatt"
+            },
+            "latitude": {
+                "N": "48.09440049636863"
+            },
+            "userId": {
+                "S": "2d7731fd-ed21-4d68-b8a8-bc4a13a55380"
+            },
+            "longitude": {
+                "N": "-1.634432807493445"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "x312_E0E2E6329640"
+            },
+            "deviceId": {
+                "S": "E0E2E6329640"
+            },
+            "deviceType": {
+                "S": "x312"
+            },
+            "latitude": {
+                "N": "48.089370446378226"
+            },
+            "userId": {
+                "S": "2d7731fd-ed21-4d68-b8a8-bc4a13a55380"
+            },
+            "longitude": {
+                "N": "-1.6208158594679674"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "tild_E0E2E64C8000"
+            },
+            "deviceId": {
+                "S": "E0E2E64C8000"
+            },
+            "deviceType": {
+                "S": "tild"
+            },
+            "latitude": {
+                "N": "48.09443764560664"
+            },
+            "userId": {
+                "S": "2d7731fd-ed21-4d68-b8a8-bc4a13a55380"
+            },
+            "longitude": {
+                "N": "-1.634255516275597"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "my pool light"
+            },
+            "deviceId": {
+                "S": "C049EFEC79CC"
+            },
+            "deviceType": {
+                "S": "x312"
+            },
+            "latitude": {
+                "N": "48.3864651"
+            },
+            "userId": {
+                "S": "90e6232a-6ea9-4b21-a3e8-df7a8d8e6796"
+            },
+            "longitude": {
+                "N": "-4.4361706"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "Wix3_M"
+            },
+            "deviceId": {
+                "S": "30C6F7C01018"
+            },
+            "deviceType": {
+                "S": "x312"
+            },
+            "latitude": {
+                "N": "48.385827093549835"
+            },
+            "userId": {
+                "S": "d11a413e-5944-431d-8d56-2336513b7134"
+            },
+            "longitude": {
+                "N": "-4.436816436380559"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "Meteor_441793428D08"
+            },
+            "deviceId": {
+                "S": "441793428D08"
+            },
+            "deviceType": {
+                "S": "anteam"
+            },
+            "latitude": {
+                "N": "48.38654181619781"
+            },
+            "userId": {
+                "S": "605a6264-1bc6-41ea-ac11-ab038ae51d97"
+            },
+            "longitude": {
+                "N": "-4.4359274964789535"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceId": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceType": {
+                "S": "phileox"
+            },
+            "latitude": {
+                "N": "48.38654181619781"
+            },
+            "userId": {
+                "S": "605a6264-1bc6-41ea-ac11-ab038ae51d97"
+            },
+            "longitude": {
+                "N": "-4.4359274964789535"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "E0E2E672E0A0"
+            },
+            "deviceId": {
+                "S": "E0E2E672E0A0"
+            },
+            "deviceType": {
+                "S": "ziphox"
+            },
+            "latitude": {
+                "N": "48.094433940734945"
+            },
+            "userId": {
+                "S": "605a6264-1bc6-41ea-ac11-ab038ae51d97"
+            },
+            "longitude": {
+                "N": "-1.6343352601351966"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "3485189A871C"
+            },
+            "deviceId": {
+                "S": "3485189A871C"
+            },
+            "deviceType": {
+                "S": "limpido"
+            },
+            "latitude": {
+                "N": "48.094463503524295"
+            },
+            "userId": {
+                "S": "590afb95-dca2-4912-8992-17d9cc5e6622"
+            },
+            "longitude": {
+                "N": "-1.6342822517933715"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceId": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceType": {
+                "S": "phileox"
+            },
+            "latitude": {
+                "N": "0"
+            },
+            "userId": {
+                "S": "590afb95-dca2-4912-8992-17d9cc5e6622"
+            },
+            "longitude": {
+                "N": "0"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "Test VigiFlow Eliott"
+            },
+            "deviceId": {
+                "S": "94B555AA0308"
+            },
+            "deviceType": {
+                "S": "mika"
+            },
+            "latitude": {
+                "N": "48.094463503524295"
+            },
+            "userId": {
+                "S": "590afb95-dca2-4912-8992-17d9cc5e6622"
+            },
+            "longitude": {
+                "N": "-1.6342822517933715"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "VigiChiotte"
+            },
+            "deviceId": {
+                "S": "94B555AA03B8"
+            },
+            "deviceType": {
+                "S": "niva"
+            },
+            "latitude": {
+                "N": "48.094463503524295"
+            },
+            "userId": {
+                "S": "590afb95-dca2-4912-8992-17d9cc5e6622"
+            },
+            "longitude": {
+                "N": "-1.6342822517933715"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "vigichlor_94E6869B52CC"
+            },
+            "deviceId": {
+                "S": "94E6869B52CC"
+            },
+            "deviceType": {
+                "S": "vigichlor"
+            },
+            "latitude": {
+                "N": "0"
+            },
+            "userId": {
+                "S": "590afb95-dca2-4912-8992-17d9cc5e6622"
+            },
+            "longitude": {
+                "N": "0"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceId": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceType": {
+                "S": "phileox"
+            },
+            "latitude": {
+                "N": "48.38647126525214"
+            },
+            "userId": {
+                "S": "88c59ce0-6275-4d3e-b694-f2122c2a0114"
+            },
+            "longitude": {
+                "N": "-4.4358671119815645"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "4417935E5BAC"
+            },
+            "deviceId": {
+                "S": "4417935E5BAC"
+            },
+            "deviceType": {
+                "S": "harry"
+            },
+            "latitude": {
+                "N": "48.387089730240405"
+            },
+            "userId": {
+                "S": "ae77c667-91e0-477f-8b05-574ad4e9e185"
+            },
+            "longitude": {
+                "N": "-4.436067100614309"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "vigiwatt_441793428D08"
+            },
+            "deviceId": {
+                "S": "441793428D08"
+            },
+            "deviceType": {
+                "S": "vigiwatt"
+            },
+            "latitude": {
+                "N": "48.094439253461196"
+            },
+            "userId": {
+                "S": "35f4efba-0379-4b1a-a010-0314442e4ac2"
+            },
+            "longitude": {
+                "N": "-1.6343618763511403"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceId": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceType": {
+                "S": "phileox"
+            },
+            "latitude": {
+                "N": "48.38654630900704"
+            },
+            "userId": {
+                "S": "35f4efba-0379-4b1a-a010-0314442e4ac2"
+            },
+            "longitude": {
+                "N": "-4.435863367649478"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "7C9EBDE12BB4"
+            },
+            "deviceId": {
+                "S": "7C9EBDE12BB4"
+            },
+            "deviceType": {
+                "S": "phileox"
+            },
+            "latitude": {
+                "N": "48.396458401763525"
+            },
+            "userId": {
+                "S": "35f4efba-0379-4b1a-a010-0314442e4ac2"
+            },
+            "longitude": {
+                "N": "-4.467336125136119"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "7C9EBDE138D4"
+            },
+            "deviceId": {
+                "S": "7C9EBDE138D4"
+            },
+            "deviceType": {
+                "S": "ziphox"
+            },
+            "latitude": {
+                "N": "48.38654181619781"
+            },
+            "userId": {
+                "S": "35f4efba-0379-4b1a-a010-0314442e4ac2"
+            },
+            "longitude": {
+                "N": "-4.4359274964789535"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "tild_94B97E784C7C"
+            },
+            "deviceId": {
+                "S": "94B97E784C7C"
+            },
+            "deviceType": {
+                "S": "tild"
+            },
+            "latitude": {
+                "N": "48.38667312048323"
+            },
+            "userId": {
+                "S": "35f4efba-0379-4b1a-a010-0314442e4ac2"
+            },
+            "longitude": {
+                "N": "-4.43617686672722"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "C45BBE312FFC"
+            },
+            "deviceId": {
+                "S": "C45BBE312FFC"
+            },
+            "deviceType": {
+                "S": "ziphox"
+            },
+            "latitude": {
+                "N": "48.3862479776144"
+            },
+            "userId": {
+                "S": "35f4efba-0379-4b1a-a010-0314442e4ac2"
+            },
+            "longitude": {
+                "N": "-4.436078667640686"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "E0E2E6329634"
+            },
+            "deviceId": {
+                "S": "E0E2E6329634"
+            },
+            "deviceType": {
+                "S": "oxeox"
+            },
+            "latitude": {
+                "N": "48.38654555091681"
+            },
+            "userId": {
+                "S": "35f4efba-0379-4b1a-a010-0314442e4ac2"
+            },
+            "longitude": {
+                "N": "-4.435670831109624"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "tild_E0E2E64C8000"
+            },
+            "deviceId": {
+                "S": "E0E2E64C8000"
+            },
+            "deviceType": {
+                "S": "tild"
+            },
+            "latitude": {
+                "N": "48.0945588"
+            },
+            "userId": {
+                "S": "35f4efba-0379-4b1a-a010-0314442e4ac2"
+            },
+            "longitude": {
+                "N": "-1.6344217"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "E0E2E64C801C"
+            },
+            "deviceId": {
+                "S": "E0E2E64C801C"
+            },
+            "deviceType": {
+                "S": "zelix"
+            },
+            "latitude": {
+                "N": "48.38668255686655"
+            },
+            "userId": {
+                "S": "35f4efba-0379-4b1a-a010-0314442e4ac2"
+            },
+            "longitude": {
+                "N": "-4.436178897517007"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "4417935E5BAC"
+            },
+            "deviceId": {
+                "S": "4417935E5BAC"
+            },
+            "deviceType": {
+                "S": "harry"
+            },
+            "latitude": {
+                "N": "48.3864713"
+            },
+            "userId": {
+                "S": "ab6493e5-f364-40f6-b347-8db0ec238828"
+            },
+            "longitude": {
+                "N": "-4.4361691"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceId": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceType": {
+                "S": "phileox"
+            },
+            "latitude": {
+                "N": "48.3864589031685"
+            },
+            "userId": {
+                "S": "fb4efdb2-596b-44d1-9b98-53a51aa62607"
+            },
+            "longitude": {
+                "N": "-4.435754423288573"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "nexteu_08D1F9A022B0 Brest"
+            },
+            "deviceId": {
+                "S": "08D1F9A022B0"
+            },
+            "deviceType": {
+                "S": "nexteu"
+            },
+            "latitude": {
+                "N": "48.386954655870795"
+            },
+            "userId": {
+                "S": "7c4b5ca2-f748-47e5-86da-efeb8c0f1511"
+            },
+            "longitude": {
+                "N": "-4.435867527499795"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "anteam_441793428D08"
+            },
+            "deviceId": {
+                "S": "441793428D08"
+            },
+            "deviceType": {
+                "S": "anteam"
+            },
+            "latitude": {
+                "N": "48.38654181619781"
+            },
+            "userId": {
+                "S": "7c4b5ca2-f748-47e5-86da-efeb8c0f1511"
+            },
+            "longitude": {
+                "N": "-4.4359274964789535"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceId": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceType": {
+                "S": "phileox"
+            },
+            "latitude": {
+                "N": "48.386473"
+            },
+            "userId": {
+                "S": "7c4b5ca2-f748-47e5-86da-efeb8c0f1511"
+            },
+            "longitude": {
+                "N": "-4.4363927"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "7C9EBDE12BB4"
+            },
+            "deviceId": {
+                "S": "7C9EBDE12BB4"
+            },
+            "deviceType": {
+                "S": "phileox"
+            },
+            "latitude": {
+                "N": "48.396458401763525"
+            },
+            "userId": {
+                "S": "7c4b5ca2-f748-47e5-86da-efeb8c0f1511"
+            },
+            "longitude": {
+                "N": "-4.467336125136119"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "niva_94B555A9FA3C"
+            },
+            "deviceId": {
+                "S": "94B555A9FA3C"
+            },
+            "deviceType": {
+                "S": "niva"
+            },
+            "latitude": {
+                "N": "48.3864569"
+            },
+            "userId": {
+                "S": "7c4b5ca2-f748-47e5-86da-efeb8c0f1511"
+            },
+            "longitude": {
+                "N": "-4.4362732"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "VigiChiotte"
+            },
+            "deviceId": {
+                "S": "94B555AA03B8"
+            },
+            "deviceType": {
+                "S": "niva"
+            },
+            "latitude": {
+                "N": "48.094463503524295"
+            },
+            "userId": {
+                "S": "7c4b5ca2-f748-47e5-86da-efeb8c0f1511"
+            },
+            "longitude": {
+                "N": "-1.6342822517933715"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "tild_94B97E784C7C"
+            },
+            "deviceId": {
+                "S": "94B97E784C7C"
+            },
+            "deviceType": {
+                "S": "tild"
+            },
+            "latitude": {
+                "N": "48.3864632"
+            },
+            "userId": {
+                "S": "7c4b5ca2-f748-47e5-86da-efeb8c0f1511"
+            },
+            "longitude": {
+                "N": "-4.4361711"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "94B97E784D08"
+            },
+            "deviceId": {
+                "S": "94B97E784D08"
+            },
+            "deviceType": {
+                "S": "phileox"
+            },
+            "latitude": {
+                "N": "48.3964872"
+            },
+            "userId": {
+                "S": "7c4b5ca2-f748-47e5-86da-efeb8c0f1511"
+            },
+            "longitude": {
+                "N": "-4.467311"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "C45BBE312FFC"
+            },
+            "deviceId": {
+                "S": "C45BBE312FFC"
+            },
+            "deviceType": {
+                "S": "ziphox"
+            },
+            "latitude": {
+                "N": "48.3864631"
+            },
+            "userId": {
+                "S": "7c4b5ca2-f748-47e5-86da-efeb8c0f1511"
+            },
+            "longitude": {
+                "N": "-4.436173"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "tild_C4DD57B819A4"
+            },
+            "deviceId": {
+                "S": "C4DD57B819A4"
+            },
+            "deviceType": {
+                "S": "tild"
+            },
+            "latitude": {
+                "N": "48.39624775205183"
+            },
+            "userId": {
+                "S": "7c4b5ca2-f748-47e5-86da-efeb8c0f1511"
+            },
+            "longitude": {
+                "N": "-4.467225535566471"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "Me teor CCDBA7DEF4F8"
+            },
+            "deviceId": {
+                "S": "CCDBA7DEF4F8"
+            },
+            "deviceType": {
+                "S": "anteam"
+            },
+            "latitude": {
+                "N": "48.3864716"
+            },
+            "userId": {
+                "S": "7c4b5ca2-f748-47e5-86da-efeb8c0f1511"
+            },
+            "longitude": {
+                "N": "-4.4363943"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "coffret v2"
+            },
+            "deviceId": {
+                "S": "E0E2E64C8000"
+            },
+            "deviceType": {
+                "S": "tild"
+            },
+            "latitude": {
+                "N": "48.39624775205183"
+            },
+            "userId": {
+                "S": "7c4b5ca2-f748-47e5-86da-efeb8c0f1511"
+            },
+            "longitude": {
+                "N": "-4.467225535566471"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "E0E2E64C801C"
+            },
+            "deviceId": {
+                "S": "E0E2E64C801C"
+            },
+            "deviceType": {
+                "S": "zelix"
+            },
+            "latitude": {
+                "N": "48.38684179354459"
+            },
+            "userId": {
+                "S": "7c4b5ca2-f748-47e5-86da-efeb8c0f1511"
+            },
+            "longitude": {
+                "N": "-4.4361121114343405"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "ziphox gawen"
+            },
+            "deviceId": {
+                "S": "083AF20D4908"
+            },
+            "deviceType": {
+                "S": "ziphox"
+            },
+            "latitude": {
+                "N": "0"
+            },
+            "userId": {
+                "S": "55dfb1c6-d372-4ab7-8235-b6aa0b0dcc23"
+            },
+            "longitude": {
+                "N": "0"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "ziphox gawen"
+            },
+            "deviceId": {
+                "S": "083AF20D4908"
+            },
+            "deviceType": {
+                "S": "ziphox"
+            },
+            "latitude": {
+                "N": "0"
+            },
+            "userId": {
+                "S": "8712798a-cbac-4c0f-a060-f225cc4b23fe"
+            },
+            "longitude": {
+                "N": "0"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "Meteor_CCDBA7DF70E0"
+            },
+            "deviceId": {
+                "S": "CCDBA7DF70E0"
+            },
+            "deviceType": {
+                "S": "anteam"
+            },
+            "latitude": {
+                "N": "48.0946245"
+            },
+            "userId": {
+                "S": "c4f4f753-e292-430a-9e64-fd64de9098ce"
+            },
+            "longitude": {
+                "N": "-1.634531"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "0CB815051BF0"
+            },
+            "deviceId": {
+                "S": "0CB815051BF0"
+            },
+            "deviceType": {
+                "S": "harry"
+            },
+            "latitude": {
+                "N": "48.0945596"
+            },
+            "userId": {
+                "S": "00e5252e-f96c-45c5-bb0e-06009595bc0a"
+            },
+            "longitude": {
+                "N": "-1.6344164"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "vigipac_30C6F7C0D08C"
+            },
+            "deviceId": {
+                "S": "30C6F7C0D08C"
+            },
+            "deviceType": {
+                "S": "vigipac"
+            },
+            "latitude": {
+                "N": "48.0945573"
+            },
+            "userId": {
+                "S": "00e5252e-f96c-45c5-bb0e-06009595bc0a"
+            },
+            "longitude": {
+                "N": "-1.6344154"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "tild_E0E2E64C8000"
+            },
+            "deviceId": {
+                "S": "E0E2E64C8000"
+            },
+            "deviceType": {
+                "S": "tild"
+            },
+            "latitude": {
+                "N": "48.0945588"
+            },
+            "userId": {
+                "S": "00e5252e-f96c-45c5-bb0e-06009595bc0a"
+            },
+            "longitude": {
+                "N": "-1.6344217"
+            }
+        },
+        {
+            "deviceName": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceId": {
+                "S": "7C9EBDE12BB0"
+            },
+            "deviceType": {
+                "S": "phileox"
+            },
+            "latitude": {
+                "N": "48.386608121090845"
+            },
+            "userId": {
+                "S": "4ed89ed0-8cfc-4e39-9c24-d1995b47395d"
+            },
+            "longitude": {
+                "N": "-4.4357602523556015"
+            }
+        }
+    ],
+    "Count": 83,
+    "ScannedCount": 83,
+    "ConsumedCapacity": null
+}

@@ -69,7 +69,7 @@ object DynamoDbUtils {
 
   // method to dump a table to json file
   fun dumpTable(tableName: String, fileName: String = tableName) {
-    val command = listOf(IotCoreUtils.AWS_CLI, "dynamodb", "scan", "--table-name", tableName)
+    val command = listOf("wsl",IotCoreUtils.AWS_CLI, "dynamodb", "scan", "--table-name", tableName,"--region","eu-west-3")
     val outputFileName = "$fileName.json"
     // TODO output to the right directory
     IotCoreUtils.execCommand(command, File(outputFileName))
@@ -78,8 +78,8 @@ object DynamoDbUtils {
 }
 
 fun main() {
-  //DynamoDbUtils.dumpTable("IOT_devicesList")
-  val iotDeviceList = DynamoDbUtils.loadIOTDevicesList()
-  val device = iotDeviceList.getDevice("C049EFEC97C8")
-  println(device)
+  DynamoDbUtils.dumpTable("VigipoolStack-VigipoolIoTsListDB70C5EE1D-1796DF05LZLBS")
+//  val iotDeviceList = DynamoDbUtils.loadIOTDevicesList()
+//  val device = iotDeviceList.getDevice("C049EFEC97C8")
+//  println(device)
 }

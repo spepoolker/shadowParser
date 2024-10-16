@@ -42,10 +42,11 @@ object LocalShadowUtils {
   }
 
   fun parseShadowFile(file: File): ShadowWrapper {
-    val shadowWrapper = ShadowWrapper()
-    shadowWrapper.name = file.name
-    shadowWrapper.rawJson = file.readText()
-    shadowWrapper.shadow = Gson().fromJson(shadowWrapper.rawJson, Shadow::class.java)
+    val shadowWrapper = ShadowWrapper().apply {
+      name = file.name
+      rawJson = file.readText()
+      shadow = Gson().fromJson(rawJson, Shadow::class.java)
+    }
 
     // get master device id from file name
     val masterDeviceId = file.nameWithoutExtension

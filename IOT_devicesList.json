@@ -131756,3 +131756,9 @@
     "ScannedCount": 6801,
     "ConsumedCapacity": null
 }
+
+You must specify a region. You can also configure your region by running "aws configure".
+
+Unable to locate credentials. You can configure credentials by running "aws configure".
+
+An error occurred (ResourceNotFoundException) when calling the Scan operation: Requested resource not found

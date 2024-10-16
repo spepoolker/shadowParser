@@ -13,9 +13,11 @@ import java.util.*
 @OptIn(ExperimentalStdlibApi::class)
 object IotCoreUtils {
 
-  const val USER_DIR = "/Users/sylvain"
+
+
+  const val USER_DIR = "\\\\wsl.localhost\\Debian\\home\\stual"
   const val SCRIPTS_DIR = "$USER_DIR/ShellScriptsProjects/old"
-  const val AWS_CLI = "$USER_DIR/aws-cli/aws-cli/aws"
+  const val AWS_CLI = "aws"
   const val SHADOW_LINK = "https://eu-west-1.console.aws.amazon.com/iot/home?region=eu-west-1#/thing/%s/namedShadow/Classic Shadow"
 
   val AWS_IOT = listOf(AWS_CLI, "iot")
@@ -50,7 +52,7 @@ object IotCoreUtils {
   }
 
   fun listThings(suffix: String? = null): String {
-    val command = listOf(AWS_CLI, "iot", "list-things")
+    val command = listOf("wsl",AWS_CLI, "iot", "list-things")
     val outputFileName = "things${suffix?.let{ "_$it" }}.json"
     // TODO add exponential backoff in case of throttling
     execCommand(command, File(outputFileName))
@@ -91,6 +93,8 @@ object IotCoreUtils {
 }
 
 fun main() {
+  val file = File("\\\\wsl.localhost\\Debian\\home\\stual\\aws")
+  println(file.exists())
   val today = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))
   val thingsFileName = IotCoreUtils.listThings(today)
 
