@@ -14,8 +14,8 @@ object Config {
   val userDir by lazy { getProperty("user_dir") }
   val awsPath by lazy { getProperty("aws_path") }
   val useWsl by lazy { getProperty("use_wsl").toBoolean() }
-  val awsRegion by lazy { getProperty("aws_path") }
-  val shadowDir by lazy { getProperty("shadow_dir") }
+  val awsRegion by lazy { getProperty("aws_region") }
+  val shadowDir = "data/output/shadow"
 
   fun getAwsCommand(vararg cmd: String): List<String> {
     return if (useWsl) {

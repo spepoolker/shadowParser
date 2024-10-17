@@ -12,20 +12,28 @@ object LocalShadowUtils {
 
   private const val LOG_MISSING_PROPERTIES = false
 
-  private val TS = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd"))
-  private val ROOT_SHADOW_DIR = "$shadowDir/shadows"
+  val TS = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd"))
+  private val ROOT_SHADOW_DIR = shadowDir
+
   // TODO switch to shadows/$timestamp
-  val SHADOW_DIR = "${ROOT_SHADOW_DIR}_$TS"
+  val SHADOW_DIR = "${ROOT_SHADOW_DIR}/$TS"
 
-  fun getShadowDirPath(ts: String = TS): String = "${ROOT_SHADOW_DIR}_$ts"
-  fun getShadowDirFile(ts: String = TS): File = File(getShadowDirPath(ts))
+  fun getShadowDirPath(ts: String = TS): String = "${ROOT_SHADOW_DIR}${File.separator}$ts"
+  fun getShadowDirFile(ts: String = TS): File {
+    val shadowDirFile = File(getShadowDirPath(ts))
+    if (!shadowDirFile.exists()) {
+      shadowDirFile.mkdirs()  // Create the directory if it doesn't exist
+    }
+    return shadowDirFile
+  }
 
-  fun getShadowPath(deviceId: String, ts: String = TS): String = getShadowDirPath(ts) + "/$deviceId.json"
+  fun getShadowPath(deviceId: String, ts: String = TS): String = getShadowDirPath(ts) + "${File.separator}$deviceId.json"
+
   fun getShadowFile(deviceId: String, ts: String = TS): File = File(getShadowPath(deviceId, ts))
 
   fun listShadowDirectories(): List<String> {
     return File(ROOT_SHADOW_DIR).parentFile
-      .listFiles { _, name -> name.startsWith("shadows_") }
+      .listFiles { _, name -> name.startsWith("shadow/") }
       ?.map { it.name }
       ?: emptyList()
   }
@@ -38,15 +46,15 @@ object LocalShadowUtils {
   }
 
   fun parseShadowDirectory(ts: String = TS): List<ShadowWrapper> {
-    val directory = File("${ROOT_SHADOW_DIR}_$ts")
+    val directory = File("${ROOT_SHADOW_DIR}/$ts")
     return directory
       .listFiles { _, name -> name.endsWith(".json") }
       ?.map { parseShadowFile(it) }
       ?: emptyList()
   }
 
-  fun parseShadowFile(deviceId: String, ts:String): ShadowWrapper {
-    val file = File("${ROOT_SHADOW_DIR}_$ts/$deviceId.json")
+  fun parseShadowFile(deviceId: String, ts: String): ShadowWrapper {
+    val file = File("${ROOT_SHADOW_DIR}/$ts/$deviceId.json")
     return parseShadowFile(file)
   }
 
@@ -104,13 +112,16 @@ object LocalShadowUtils {
   fun getConnectedShadows(ts: String = TS): List<ShadowWrapper> {
     return parseShadowDirectory(ts)
       .filter { it.master?.get("connected") as Boolean }
-  }
 
+  }
 }
 
 fun main() {
-  LocalShadowUtils.listShadowDirectories().forEach {
-    println("Directory: $it")
-    //LocalShadowUtils.getShadows(it).forEach { println(it) }
-  }
+    LocalShadowUtils.getShadows().filter{shadow ->
+      shadow.hasMasterModelId(2)
+    }.forEach {
+      println(it.shadowLink())
+    }
+  val michel : Int? = null
+  val robert = michel?:0
 }

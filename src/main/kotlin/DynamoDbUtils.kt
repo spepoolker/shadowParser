@@ -80,7 +80,7 @@ object DynamoDbUtils {
 }
 
 fun main() {
-  DynamoDbUtils.dumpTable("IOT_devicesList")
+  DynamoDbUtils.dumpTable("VigipoolStack-VigipoolIoTsListDB70C5EE1D-1796DF05LZLBS")
 //  val iotDeviceList = DynamoDbUtils.loadIOTDevicesList()
 //  val device = iotDeviceList.getDevice("C049EFEC97C8")
 //  println(device)

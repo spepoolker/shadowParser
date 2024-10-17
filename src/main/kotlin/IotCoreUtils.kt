@@ -1,8 +1,11 @@
 package org.example
 
+import com.google.gson.Gson
 import org.example.Config.awsRegion
 import org.example.Config.getAwsCommand
 import org.example.Config.outputDirPath
+import org.example.IotCoreUtils.getThingsShadows
+import org.example.LocalShadowUtils.TS
 import java.io.BufferedReader
 import java.io.File
 import java.io.InputStreamReader
@@ -30,7 +33,7 @@ object IotCoreUtils {
     return "$majorVersion.$minorVersion"
   }
 
-  fun execCommand(command: List<String>, outputFile: File? = null) {
+  fun execCommand(command: List<String>, outputFile: File? = null) :Int{
     val processBuilder = ProcessBuilder(command).apply { redirectErrorStream(true) }
     val process = processBuilder.start()
     val reader = BufferedReader(InputStreamReader(process.inputStream))
@@ -41,29 +44,56 @@ object IotCoreUtils {
     }
 
     process.waitFor()
-    println("> $command: ${process.exitValue()}")
+    val returnCode = process.exitValue()
+    println("> $command: $returnCode")
+    return returnCode
   }
 
   fun listThings(suffix: String? = null): String {
     val command = getAwsCommand("iot", "list-things")
     val outputFileName = "$outputDirPath/things${suffix?.let{ "_$it" }}.json"
     // TODO add exponential backoff in case of throttling
-    execCommand(command, File(outputFileName))
+
+    val file = File(outputFileName).apply {
+      if (exists()) delete() else parentFile.mkdirs()
+    }
+    execCommand(command, file)
     return outputFileName
   }
 
-//  fun getThingsShadows(fileName: String) {
-//    val things = File(fileName).readText()
-//  }
+  fun getThingsShadows(fileName: String) {
+    val things = File(fileName).readText()
+    val thingsList = Gson().fromJson(things, ThingsResponse::class.java)
+
+    println(thingsList)
+    File("$outputDirPath/shadow/").apply{
+      deleteRecursively()
+    }
+
+    thingsList.things.forEach{ thing->
+      if (thing.thingTypeName.isNullOrEmpty()) return@forEach
+      getThingShadow(thing.thingName, prettyPrint = true)
+    }
+  }
+
 
   fun getThingShadow(
     deviceId: String,
-    outputDirectory: File? = File("."),
+    //outputDirectory: File? = File(outputDirPath),
     prettyPrint: Boolean? = false
   ) {
-    val outputFile = File(outputDirectory, "$deviceId.json")
-    val command = getAwsCommand("iot-data", "get-thing-shadow", "--thing-name", deviceId, outputFile.absolutePath)
-    execCommand(command)
+    val outputFile = File( "$outputDirPath/shadow/$TS/${deviceId}.json").apply { if (exists()) delete() else parentFile.mkdirs() }
+    // Convert Windows path to WSL if necessary
+    val outputFilePath = if (System.getProperty("os.name").contains("Windows")) {
+      outputFile.absolutePath.replace("\\", "/").replace("C:", "/mnt/c")
+    } else {
+      outputFile.absolutePath
+    }
+    val command = getAwsCommand("iot-data", "get-thing-shadow", "--thing-name", deviceId,outputFilePath)
+    val result = execCommand(command,outputFile)
+    if (result!=0){
+      outputFile.delete()
+    return}
 
     // once this is done, overwrite the file with a pretty-printed version
     if (prettyPrint == true)
@@ -87,7 +117,7 @@ object IotCoreUtils {
 fun main() {
   val today = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))
   val thingsFileName = IotCoreUtils.listThings(today)
-
+  getThingsShadows(thingsFileName)
 //  IotCoreUtils.getThingShadow(
 //    deviceId = "tild_94B97E784C7C",
 //    prettyPrint = true

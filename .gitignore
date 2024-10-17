@@ -6,6 +6,7 @@ build/
 
 ### Generated files
 data/**/*
+src/main/resources/config.properties
 
 ### IntelliJ IDEA ###
 .idea/**

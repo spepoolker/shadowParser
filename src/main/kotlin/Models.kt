@@ -234,7 +234,7 @@ data class Metadata(
 
 data class Thing(
   val thingName: String,
-  val thingTypeName: String,
+  val thingTypeName: String?,
   val thingArn: String,
   val attributes: LinkedHashMap<String, Any>,
   val version: Int
